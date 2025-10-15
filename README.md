@@ -8,7 +8,7 @@ A simple **React Native (Expo)** application that displays a list of coffee menu
 Users can view detailed coffee information, images, prices, and adjust quantity all for Mobile Programming Assignmant Purpose.
 
 ### 👤 Identity
-**Nama:** Andika Bahari Maskar  
+**Name:** Andika Bahari Maskar  
 **NIM:** 2304076  
 
 ---
@@ -42,25 +42,6 @@ Users can view detailed coffee information, images, prices, and adjust quantity 
 | Backend | FastAPI (deployed on Vercel) |
 | Font | Poppins |
 | API Base URL | `https://coffee-shop-menu-backend.vercel.app/` |
-
----
-
-## 🗂️ Project Structure
-
-coffee-shop-app/
-├── app/
-│ ├── index.tsx # Home screen (list of coffee)
-│ └── [id]/index.tsx # Detail screen for each coffee
-├── components/
-│ └── CoffeeCard.tsx # Coffee list item component
-├── styles/
-│ └── coffeeCard.ts # CoffeeCard styling
-├── assets/
-│ └── example.gif # Demo image/gif
-├── package.json
-├── App.tsx
-└── README.md
-
 
 ---
 
