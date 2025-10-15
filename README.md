@@ -3,10 +3,13 @@
 ![React Native](https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 A simple **React Native (Expo)** application that displays a list of coffee menus fetched from a **FastAPI backend**.  
-Users can view detailed coffee information, images, prices, and adjust quantity — all for learning and demonstration purposes.
+Users can view detailed coffee information, images, prices, and adjust quantity all for Mobile Programming Assignmant Purpose.
+
+### 👤 Identity
+**Nama:** Andika Bahari Maskar  
+**NIM:** 2304076  
 
 ---
 
@@ -88,25 +91,17 @@ npx expo start
 https://coffee-shop-menu-backend.vercel.app/
 ```
 
-### GET ALL COFFEE DATA
+### GET All Coffee Data
 ```bash
 GET /coffee
 ```
 
-### GET COFFEE BY ID
+### GET Coffee by Id
 ```bash
 GET /coffee/{coffee_id}
 ```
 
-### GET COFFEE IMAGE
+### GET Coffee Image
 ```bash
 GET /images/{filename}
 ```
-
-
----
-
-### 🪄 Petunjuk Tambahan
-1. Simpan file ini di root proyek sebagai `README.md`.  
-2. Pastikan `example.gif` ada di root atau ubah path-nya jika kamu taruh di `assets/`.  
-3. Ganti `your-username` di link GitHub sesuai username kamu.  
