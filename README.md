@@ -1,50 +1,112 @@
-# Welcome to your Expo app 👋
+# ☕ Coffee Shop Menu App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![React Native](https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-## Get started
+A simple **React Native (Expo)** application that displays a list of coffee menus fetched from a **FastAPI backend**.  
+Users can view detailed coffee information, images, prices, and adjust quantity — all for learning and demonstration purposes.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📸 Demo
 
-2. Start the app
+![App Preview](example.gif)
 
-   ```bash
-   npx expo start
-   ```
+> The demo above shows the flow: viewing coffee list → selecting an item → viewing details and quantity interaction.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📜 Display coffee list fetched from a FastAPI endpoint  
+- 🖼️ Show coffee poster thumbnails and titles  
+- 📱 Navigate to detail page using **Expo Router**  
+- 💵 Quantity & Price simulation (UI only)  
+- 🎨 Coffee-brown color theme with **Poppins** font  
+- ⚡ Lightweight and fast, perfect for mobile learning projects
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🧩 Tech Stack
 
+| Area | Technology |
+|------|-------------|
+| Frontend | React Native (Expo) |
+| Navigation | Expo Router |
+| Styling | React Native StyleSheet |
+| Backend | FastAPI (deployed on Vercel) |
+| Font | Poppins |
+| API Base URL | `https://coffee-shop-menu-backend.vercel.app/` |
+
+---
+
+## 🗂️ Project Structure
+
+coffee-shop-app/
+├── app/
+│ ├── index.tsx # Home screen (list of coffee)
+│ └── [id]/index.tsx # Detail screen for each coffee
+├── components/
+│ └── CoffeeCard.tsx # Coffee list item component
+├── styles/
+│ └── coffeeCard.ts # CoffeeCard styling
+├── assets/
+│ └── example.gif # Demo image/gif
+├── package.json
+├── App.tsx
+└── README.md
+
+
+---
+
+## ⚙️ Installation & Running
+
+Follow these steps to run the project locally.
+
+### 1️⃣ Clone the Repository
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/coffee-shop-menu.git
+cd coffee-shop-menu
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+```bash
+npm install
+```
 
-## Learn more
+```bash
+yarn install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### BASE URL
+```bash
+https://coffee-shop-menu-backend.vercel.app/
+```
 
-## Join the community
+### GET ALL COFFEE DATA
+```bash
+GET /coffee
+```
 
-Join our community of developers creating universal apps.
+### GET COFFEE BY ID
+```bash
+GET /coffee/{coffee_id}
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### GET COFFEE IMAGE
+```bash
+GET /images/{filename}
+```
+
+
+---
+
+### 🪄 Petunjuk Tambahan
+1. Simpan file ini di root proyek sebagai `README.md`.  
+2. Pastikan `example.gif` ada di root atau ubah path-nya jika kamu taruh di `assets/`.  
+3. Ganti `your-username` di link GitHub sesuai username kamu.  
